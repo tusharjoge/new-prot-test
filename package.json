@@ -1,0 +1,20 @@
+{
+  "name": "new-prot-test",
+  "version": "1.0.0",
+  "description": "Test framework for project Test",
+  "main": "conf.js",
+  "keywords": [
+    "test"
+  ],
+  "author": "tushar",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1"
+  },
+  "devDependencies": {
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.1.0",
+    "protractor-cucumber-framework": "^6.2.0"
+  }
+}

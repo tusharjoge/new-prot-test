@@ -1,0 +1,244 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "NopCommerce search on Demo envi",
+    "line": 1,
+    "id": "nopcommerce-search-on-demo-envi",
+    "tags": [],
+    "uri": "test_features/test.feature",
+    "elements": [
+      {
+        "id": "nopcommerce-search-on-demo-envi;sign-into-demo.nopcommerce.com",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Sign into demo.nopcommerce.com",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "\"demo.nopcommerce.com\" is open",
+            "match": {
+              "location": "test_step_definitions/steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2130000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click \"Log in\"",
+            "match": {
+              "location": "test_step_definitions/steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1459000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "enter valid \"Email\" as \"tawson82@hotmail.com\"",
+            "match": {
+              "location": "test_step_definitions/steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 132000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "enter valid \"Password\" as \"tjo1234\"",
+            "match": {
+              "location": "test_step_definitions/steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 103000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click \"Log in\" button",
+            "match": {
+              "location": "test_step_definitions/steps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I am logged in",
+            "match": {
+              "location": "test_step_definitions/steps.js:39"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2024000000,
+              "error_message": "TimeoutError: Wait timed out after 2020ms\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2201:17\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "nopcommerce-search-on-demo-envi;search-for-product-add-to-basket",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Search for product add to basket",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "\"demo.nopcommerce.com\" is open",
+            "match": {
+              "location": "test_step_definitions/steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1690000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "enter valid \"search\" as \"First Prize Pies\"",
+            "match": {
+              "location": "test_step_definitions/steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 234000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the search results has the \"First Prize Pies\" in it",
+            "match": {
+              "location": "test_step_definitions/steps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 805000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "nopcommerce-search-on-demo-envi;check-basket-total",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Check basket total",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "\"demo.nopcommerce.com\" is open",
+            "match": {
+              "location": "test_step_definitions/steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1493000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I add \"First Prize Pies\" to my basket",
+            "match": {
+              "location": "test_step_definitions/steps.js:55"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 0,
+              "error_message": "function has 0 arguments, should have 1 (if synchronous or returning a promise) or 2 (if accepting a callback)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I check my basket total",
+            "match": {
+              "location": "test_step_definitions/steps.js:59"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "it should match the price of the item added into basket",
+            "match": {
+              "location": "test_step_definitions/steps.js:63"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
